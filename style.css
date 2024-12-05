@@ -176,6 +176,9 @@ box-shadow: 0px 0px 37px -12px rgba(0,0,0,0.75);
   .content .container{
     display: flex;
   }
+  .content .section-title{
+    padding: 5ox 0;
+  }
   .content .container .image-content, .content .container .text-content{
     width: 50%;
   }
