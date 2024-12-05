@@ -613,7 +613,7 @@ padding: 100px 0;
     padding:20px
   }
   .left-column{
-    border: none;
+    border: none !important;
   }
 
 /* image grid section */
