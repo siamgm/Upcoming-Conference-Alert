@@ -540,7 +540,7 @@ padding: 100px 0;
   }
 
   /* padding  */
-  .content, .featured-events, .conference-countries, .conference-calendar, .tabs-section, .image-section{
+  .content, .featured-events, .conference-countries, .conference-calendar, .tabs-section, .image-section, .categories{
     padding: 30px 0;
   }
   /* grids column 1  */
@@ -585,6 +585,7 @@ padding: 100px 0;
 /* tabs section  */
   .tabs-columns{
     flex-direction: column;
+    align-items: center;
   }
  
 
@@ -600,10 +601,6 @@ padding: 100px 0;
   .left-column{
     border: none;
   }
-
-  .subcatagory-name::after {
-    left: 14%;
-}
 
 /* image grid section   */
 .images-grid{
