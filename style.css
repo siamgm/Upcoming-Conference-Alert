@@ -87,26 +87,17 @@ a{
     color: white;
     overflow: hidden;
   }
-  .her p{
+  .hero p{
     font-family: "Segoe UI", Tahoma, Geneva, sans-serif;
+    max-width: 75%;
   }
- .categories::before{
-content:'';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: #2A07F9;
-z-index: 0;
-opacity: .4;
-  }
+ 
   .hero .container{
     display: flex;
      flex-direction: column;
      gap: 20px;
-    position: relative;
-    z-index: 2;
+    align-items: center;
+    
   }
   
   .hero-buttons {
@@ -154,7 +145,9 @@ box-shadow: 0px 0px 37px -12px rgba(0,0,0,0.75);
     padding: 12px;
     border-radius: 5px;
   }
- 
+  .search-bar select{
+    border-color: #8080804d;
+  }
 
   /* content section  */
 
@@ -184,6 +177,17 @@ box-shadow: 0px 0px 37px -12px rgba(0,0,0,0.75);
 
 
   /* Categories Section  */
+  .categories::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A07F9;
+    z-index: 0;
+    opacity: .4;
+      }
 
   .categories {
     text-align: center;
