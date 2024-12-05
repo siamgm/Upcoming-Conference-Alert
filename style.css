@@ -171,12 +171,10 @@ box-shadow: 0px 0px 37px -12px rgba(0,0,0,0.75);
   .content {
     display: flex;
     margin: 0px auto;
-    width: 80%;
     padding: 80px 0;
   }
   .content .container{
     display: flex;
-    gap:50px;
   }
   .content .container .image-content, .content .container .text-content{
     width: 50%;
