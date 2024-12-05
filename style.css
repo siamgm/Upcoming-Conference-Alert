@@ -104,6 +104,7 @@ a{
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding-top: 20px;
   }
  
 
@@ -177,6 +178,9 @@ box-shadow: 0px 0px 37px -12px rgba(0,0,0,0.75);
 
 
   /* Categories Section  */
+  .categories .section-title{
+    padding-bottom: 20px;
+  }
   .categories::before{
     content:'';
     position: absolute;
@@ -241,7 +245,9 @@ box-shadow: 0px 0px 37px -12px rgba(0,0,0,0.75);
     padding: 100px 0;
     background-color: #fde5ea54;
   }
-  
+  .featured-events .section-title{
+    padding:20px 0;
+  }
 
 /* Event Cards */
 .events-grid {
@@ -289,7 +295,9 @@ box-shadow: 0px 0px 37px -12px rgba(0,0,0,0.75);
 .conference-countries{
   padding: 100px 0;
 }
-
+.conference-countries .section-title{
+  padding:20px 0;
+}
 .country-grid {
   padding-top: 30px;
   display: grid;
@@ -387,34 +395,32 @@ box-shadow: 0px 0px 37px -12px rgba(0,0,0,0.75);
 .tabs-section{
 padding: 100px 0;
 }
+.tabs-section .section-title{
+  padding:20px 0 0;
+}
 .tabs-columns{
+  padding: 20px;
   margin-top: 30px;
   display: flex;
+  gap: 20px;
   border: 1px solid #8080803d;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .left-column, .right-column{
   width: 50%;
-  padding:20px
-}
-.right-column{
   padding: 20px;
-  margin: 20px 20px 20px 0;
-  border-radius:16px ;
   background-color: #fde5ea54;
+  border-radius:16px ;
   height: fit-content;
 }
+
 
 .category-list{
   display: flex;
   flex-direction: column;
   gap: 15px;
-  list-style-type: none;
-  background-color: #fde5ea54;
-  padding: 20px;
-  border-radius: 16px;
-  
+  list-style-type: none; 
 }
 .category-list li{
   padding: 15px;
@@ -504,6 +510,9 @@ padding: 100px 0;
 .image-section{
   padding: 100px 0;
   background-color: #fde5ea54;
+}
+.image-section .section-title{
+  padding:20px 0 0;
 }
 .images-grid{
   padding-top: 30px;
@@ -623,6 +632,7 @@ padding: 100px 0;
 /* image grid section */
 .images-grid{
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
   
 }  
 .image{
