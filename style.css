@@ -616,7 +616,7 @@ padding: 100px 0;
     border: none;
   }
 
-/* image grid section   */
+/* image grid section */
 .images-grid{
   grid-template-columns: 1fr 1fr;
   
