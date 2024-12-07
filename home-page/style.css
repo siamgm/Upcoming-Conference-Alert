@@ -97,7 +97,7 @@ a{
     position: relative;
     text-align: center;
     padding: 100px 20px 150px;
-    background-image: url('Assets/hero-banner.webp') ;
+    background-image: url('../Assets/hero-banner.webp') ;
     background-size: cover ;
     background-position: center center;
     background-color: gray;
@@ -213,7 +213,7 @@ box-shadow: 0px 0px 37px -12px rgba(0,0,0,0.75);
   .categories {
     text-align: center;
     padding: 100px 0px;
-    background-image: url('Assets/banner2-min.jpg');
+    background-image: url('../Assets/banner2-min.jpg');
     color: white;
     position: relative;
     overflow: hidden;
@@ -401,7 +401,7 @@ box-shadow: 0px 0px 37px -12px rgba(0,0,0,0.75);
 .calendar-grid a::before{
   display: inline-block;
   content: '';
-  background-image: url('Assets/calendar.png');
+  background-image: url('../Assets/calendar.png');
   background-size: contain;
   width: 25px;
   height: 25px;
