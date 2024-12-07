@@ -643,6 +643,11 @@ padding: 100px 0;
   .right-column{
     margin: auto;
   }
+/* events section  */
+
+  .event-place-time{
+    font-size: 13px;
+  }
 
 /* calender section  */
 

@@ -1,15 +1,29 @@
 .cover{
     padding: 100px 0 150px;
-    background-image: url('../Assets/hero-banner.webp') ;
     background-size: cover ;
     background-position: center center;
+    background-image: url('../Assets/banner2-min.jpg');
+    position: relative;
+    overflow: hidden;
+}
+.cover::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #140089;
+    z-index: 0;
+    opacity: .6;
 }
 .cover .container{
     display: flex;
     flex-direction: column;
     gap: 20px;
    align-items: center;
-   color: white; 
+   color: white;
+   position: relative; 
 }
 
   .cover .container h1{
@@ -23,10 +37,10 @@
 
 .upcoming-conference{
     background-color: #f0f3f8;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
-.upcoming-conference .upcoming-conference{
+.upcoming-conference .conference-columns{
     display: flex;
     gap: 20px;
 }
@@ -166,3 +180,23 @@ input#searchBox {
       .category-buttons a{
         border: 1px solid #8080804d;
       }
+
+      @media (max-width: 767px){
+        .cover{
+            padding: 50px 0;
+      }
+      .upcoming-conference, .categories, .text{
+        padding: 30px 0;
+      }
+      .single-conference {
+        padding: 20px 0px 20px 0px;
+    }
+    .months{
+        display: none;
+    }
+
+    .category-buttons{
+        gap: 0;
+    }
+
+    }
