@@ -16,6 +16,9 @@
 .text{
     padding: 80px 0;
 }
+.text p{
+  font-family: "Segoe UI", Tahoma, Geneva, sans-serif;
+}
 
 .upcoming-conference{
     background-color: #f0f3f8;
@@ -103,12 +106,16 @@ input#searchBox {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow: hidden;
 }
 
 .months{
     display: flex;
     gap: 12px;
     list-style: none;
+    white-space: nowrap;
+    width: 100%;
+    overflow: scroll;
 }
 .months li{
     padding: 5px 10px;
@@ -192,18 +199,29 @@ input#searchBox {
         .cover{
             padding: 50px 0;
       }
+      .filter-column{
+        display: none;
+      }
       .upcoming-conference, .categories, .text{
         padding: 30px 0;
       }
       .single-conference {
         padding: 20px 0px 20px 0px;
     }
-    .months{
-        display: none;
-    }
 
     .category-buttons{
         gap: 0;
     }
+    .category-buttons {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .months{
+      display: flex;
+      gap: 12px;
+      list-style: none;
+      white-space: nowrap;
+      width: 100%;
+      overflow: scroll;
+  }
 
     }

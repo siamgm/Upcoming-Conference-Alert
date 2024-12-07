@@ -21,6 +21,7 @@
     display: flex;
     gap: 12px;
     list-style: none;
+    overflow: scroll;
 }
 .months li{
     padding: 5px 10px;
@@ -77,7 +78,7 @@
     .months{
         white-space: nowrap;
         width: 100%;
-        overflow: scroll;
+        
       }
       .single-conference h3{
         font-size: 18px;
