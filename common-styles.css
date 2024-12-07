@@ -17,6 +17,9 @@
     z-index: 0;
     opacity: .6;
 }
+.cover .container{
+  position: relative;
+}
 
 
 body {

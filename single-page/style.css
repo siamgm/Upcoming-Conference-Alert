@@ -1,7 +1,17 @@
 .cover{
     padding:100px 0;
 }
-
+.cover .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  color: white;
+}
+.cover h1{
+  text-align: center;
+}
 .cover-nav{
     display: flex;
     gap: 20px;
