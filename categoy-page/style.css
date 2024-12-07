@@ -1,22 +1,4 @@
-.cover{
-    padding: 100px 0 150px;
-    background-size: cover ;
-    background-position: center center;
-    background-image: url('../Assets/banner2-min.jpg');
-    position: relative;
-    overflow: hidden;
-}
-.cover::before{
-    content:'';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #140089;
-    z-index: 0;
-    opacity: .6;
-}
+
 .cover .container{
     display: flex;
     flex-direction: column;
@@ -142,6 +124,10 @@ input#searchBox {
     color: white;
 }
 
+
+
+
+
 .single-conference{
     display: flex;
     flex-direction: column;
@@ -165,17 +151,7 @@ input#searchBox {
     background-color: white;
     color: black;
   }
-  .categories::before{
-    content:'';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #2A07F9;
-    z-index: 0;
-    opacity: 0;
-      }
+  
 
       .category-buttons a{
         border: 1px solid #8080804d;
