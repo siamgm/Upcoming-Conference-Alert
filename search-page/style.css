@@ -1,4 +1,9 @@
 .conference-column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
     border-radius: 0;
     border: 1px solid #8080804d;
 }
@@ -11,13 +16,34 @@
     font-size: 32px;
     padding-bottom: 20px;
 }
-.conference-column{
+
+.months{
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+.months li{
+    padding: 5px 10px;
+    width: fit-content;
+    background-color: white;
+    border: 1.5px solid #ee0034;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.months li:hover{
+    background-color: #ee0034;
+    color: white;
+}
+
+.category-conferences{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    gap: 20px;
 }
 
 .single-conference{
+    padding: 20px 0;
     border-bottom: 1px solid #8080801f;
 }
 .single-conference h3{
