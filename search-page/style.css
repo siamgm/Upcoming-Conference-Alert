@@ -16,7 +16,11 @@
     font-size: 32px;
     padding-bottom: 20px;
 }
-
+.months{ 
+    display: flex;
+    gap: 12px;
+    list-style: none;   
+  }
 
 .months li{
     padding: 5px 10px;
@@ -73,9 +77,6 @@
     .months{
         white-space: nowrap;
         width: 100%;
-        display: flex;
-        gap: 12px;
-        list-style: none;
         overflow: scroll;
         
       }
