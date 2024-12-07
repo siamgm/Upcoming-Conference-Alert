@@ -17,8 +17,12 @@
     z-index: 0;
     opacity: .6;
 }
-.cover .container{
+.cover .container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
   color: white;
 }
 
