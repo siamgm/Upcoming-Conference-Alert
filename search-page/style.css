@@ -47,6 +47,7 @@
     border-bottom: 1px solid #8080801f;
 }
 .single-conference h3{
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -70,4 +71,15 @@
     background-color: #ee0034;
     color: white;
     
+}
+
+@media (max-width: 768px) {
+    .months{
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+      }
+      .single-conference h3{
+        font-size: 18px;
+    }
 }
