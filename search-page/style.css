@@ -17,12 +17,7 @@
     padding-bottom: 20px;
 }
 
-.months{
-    display: flex;
-    gap: 12px;
-    list-style: none;
-    overflow: scroll;
-}
+
 .months li{
     padding: 5px 10px;
     width: fit-content;
@@ -78,8 +73,13 @@
     .months{
         white-space: nowrap;
         width: 100%;
+        display: flex;
+        gap: 12px;
+        list-style: none;
+        overflow: scroll;
         
       }
+    
       .single-conference h3{
         font-size: 18px;
     }
