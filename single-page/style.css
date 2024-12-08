@@ -1,3 +1,4 @@
+
 .cover{
     padding:100px 0;
 }
@@ -87,6 +88,10 @@ padding: 0 20px;
 
 
 
+.main-group .objective p, .main-group .info-table{
+  color: #7a7a7a;
+}
+
 .main-group{
     background-color: #f1f2f7;
     padding: 100px 0;
@@ -165,6 +170,7 @@ padding: 0 20px;
 
 .details .social-share p{
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 
@@ -231,6 +237,7 @@ padding: 0 20px;
     padding: 0;
  }
   .conference-title{
+    color: #54595F;
     font-size: 16px;
     font-weight: 600 !important;
   }
