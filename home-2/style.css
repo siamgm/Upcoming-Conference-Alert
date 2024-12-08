@@ -1,5 +1,95 @@
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+  }
+  .container{
+max-width: 1200px;
+margin:0 auto;
+  }
 
+  /* common css  */
+
+.subhead {
+    color: #f1345d !important;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+      }
+.align-center{
+  text-align: center;
+}
+.section-title {
+        font-size: 36px;
+    }
+h1{
+    font-size: 38px;
+  }
+    
+a{
+  text-decoration: none;
+  }
+  *{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  @media (min-width: 768px) {
+.text-width{
+  max-width: 75%;
+}
+  }
+  /* button styles  */
+
+  .bordered-btn{
+    background-color: transparent;
+    color: white ;
+    border: 2px solid white !important;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all .3s ease; 
+  }
+  .bordered-btn:hover{
+    background-color: white;
+    color: #f1345d;
+  }
+  .red-btn{
+    background-color:#f1345d;
+    color: white;
+    padding: 13px 20px !important;
+    border:none;
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+  .red-btn:hover{
+    background-color:#041a57;
+  }
+  .white-btn{
+    background-color: white;
+    color:#f1345d;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all .3s ease;
+  }
+  .white-btn:hover{
+    background-color:#f1345d;
+    color:white;
+  }
+  .blue-btn{
+    background-color:#041a57;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 5px;
+    transition: all .3s ease;
+  }
+  .blue-btn:hover{
+    background-color:#ee0034;
+  }
+  
 
   /* hero section  */
 
@@ -34,13 +124,40 @@
   }
  
 
-  /* search bar section  */
-  .search-bar{
-    background-color: #fef6f8;
+  /* Search Bar section  */
+  
+.conference-type{
+padding: 80px 0 ;
+
+}
+  .conference-type .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+.types{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.types li i{
+  font-size: 18px;
+}
+.types li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fde5ea;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
 
- 
-
+.types li:hover{
+  background-color:#f1345d;
+  color: white;
+}
   /* content section  */
 
   .content {
@@ -136,7 +253,7 @@
 
   /* Featured Events Section  */
   .featured-events{
-    padding: 60px 0 100px;
+    padding: 100px 0;
     background-color: #fde5ea54;
   }
   .featured-events .section-title{
@@ -173,6 +290,15 @@
 }
 .event-card h3:hover{
   color: #ee0034;
+}
+.event-place-time{
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.event-place-time i{
+  color:#f1345d;
 }
 .organizer{
   font-weight: 500;
@@ -217,15 +343,6 @@
   margin: 0 -15px 10px;
   border-radius: 5px 5px 0 0;
 }
-.country-name::before{
-  content: "\f024";                    
-  color: white;                     
-  font-family: "Font Awesome 6 Free"; 
-  font-weight:900;                      
-  padding-right: 15px;  
-}
-
-
 .country-citys{
   list-style: none;
   padding-left: 30px;
@@ -235,7 +352,7 @@
  
 }
 .country-citys li::before{
-  content: "\f0ac";                    
+  content: "\f105";                    
   color: #ee0034;                     
   font-family: "Font Awesome 6 Free"; 
   font-weight:900;                      
@@ -482,7 +599,7 @@ padding: 100px 0;
   .events-grid, .country-grid, .category-buttons, .calendar-grid, .subcategory-list{
     grid-template-columns: 1fr;
   }  
-  
+
   
   /* hero section  */
   .hero{
@@ -493,6 +610,16 @@ padding: 100px 0;
 }
 
 
+/* conference types section   */
+
+.conference-type .container{
+width:66%;
+}
+.types{
+  grid-template-columns: 1fr 1fr;
+}
+
+
 
 /* content section  */
 .content{
@@ -500,7 +627,6 @@ padding: 100px 0;
 }
 .content .container{
   flex-direction: column;
-  align-items: center;
 }
 .content .container .image-content, .content .container .text-content{
   width: fit-content;
@@ -517,12 +643,6 @@ padding: 100px 0;
   }
   .right-column{
     margin: auto;
-  }
-/* events section  */
-
-  .event-place-time{
-    font-size: 13px;
-    font-weight: 400;
   }
 
 /* calender section  */
