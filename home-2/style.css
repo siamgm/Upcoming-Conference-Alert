@@ -127,7 +127,7 @@ a{
   /* Search Bar section  */
   
 .conference-type{
-padding: 80px 0 ;
+padding: 80px 0 0;
 
 }
   .conference-type .container{
@@ -253,8 +253,7 @@ padding: 80px 0 ;
 
   /* Featured Events Section  */
   .featured-events{
-    padding: 100px 0;
-    background-color: #fde5ea54;
+    padding: 60px 0 100px;
   }
   .featured-events .section-title{
     padding:5px 0;
@@ -272,7 +271,7 @@ padding: 80px 0 ;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background-color: #fff;
+  background-color: #fde5ea54;
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -343,6 +342,15 @@ padding: 80px 0 ;
   margin: 0 -15px 10px;
   border-radius: 5px 5px 0 0;
 }
+.country-name::before{
+  content: "\f024";                    
+  color: white;                     
+  font-family: "Font Awesome 6 Free"; 
+  font-weight:900;                      
+  padding-right: 15px;  
+}
+
+
 .country-citys{
   list-style: none;
   padding-left: 30px;
@@ -352,7 +360,7 @@ padding: 80px 0 ;
  
 }
 .country-citys li::before{
-  content: "\f105";                    
+  content: "\f0ac";                    
   color: #ee0034;                     
   font-family: "Font Awesome 6 Free"; 
   font-weight:900;                      
