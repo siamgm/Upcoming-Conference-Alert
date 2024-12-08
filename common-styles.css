@@ -180,6 +180,14 @@ box-shadow: 0px 0px 37px -12px rgba(0,0,0,0.75);
   .event-place-time i{
     color:#ee0034;
   }
+
+  .organizer{
+    font-weight: 500;
+  }
+  .organizer span{
+    font-weight: 400;
+  }
+  
   
 
   /* Responsive Adjustments */

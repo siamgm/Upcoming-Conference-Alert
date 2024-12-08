@@ -1,3 +1,48 @@
+.cover{
+  padding: 100px 0;
+}
+
+
+
+/* Search Bar Section   */
+.conference-type{
+    padding: 80px 0 0 ;
+    
+    }
+      .conference-type .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    .types{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 20px;
+    }
+    .types li i{
+      font-size: 18px;
+    }
+    .types li{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fde5ea;
+      padding: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all .3s ease;
+    }
+    
+    .types li:hover{
+      background-color:#f1345d;
+      color: white;
+    }
+  
+  
+
+    /* conferences */
+
+
 .conference-column{
     display: flex;
     flex-direction: column;
@@ -6,6 +51,11 @@
     padding: 20px;
     border-radius: 0;
     border: 1px solid #8080804d;
+}
+.single-conference{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .upcoming-conference{
     background-color: white;
