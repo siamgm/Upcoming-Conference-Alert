@@ -59,19 +59,41 @@
 }
 
 .add-event-btn a {
-  background-color: white;
-  color: #f1345d;
+  background-color: #f1345d;
+  color: white;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
+  position: relative;
   transition: background-color 0.3s ease;
 }
 
 .add-event-btn a:hover {
-  background-color: #d62848;
-  color: white;
+  background-color: white;
+  color: #f1345d;
+}
+.add-event-btn a::before {
+  content: '\f073'; /* Unicode for FontAwesome plus icon */
+  font-family: 'Font Awesome 5 Free'; /* FontAwesome font family */
+  font-weight: 900; /* Ensures the solid icon style */
+  margin-right: 8px; /* Space between the icon and text */
+}.login-icon a i{
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  background-color: white;
+  color: #f1345d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px !important;
+  transition: all 0.3s ease;
 }
 
+.login-icon a i:hover {
+  background-color: #f1345d;
+  color: white !important;
+}
 .menu-toggle {
   display: none;
   font-size: 28px;
@@ -133,7 +155,7 @@
 .footer {
   background-color: #041a57;
   color: white;
-  padding: 80px 0 20px;
+  padding: 80px 0 0;
 }
 
 .footer .container {
@@ -156,6 +178,18 @@
 .footer-section h3 {
   font-size: 18px;
   margin-bottom: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+.footer-section h3::before{
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #d62848;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 .footer-section p {
@@ -186,11 +220,13 @@
 .connect-us ul li i {
   color: #f1345d;
   margin-right: 10px;
+  font-size: 18px;
 }
 
 .footer-social-icons{
   display: flex;
-  gap: 12px;
+  gap: 5px;
+  padding-top: 10px;
 }
 .footer-social-icons a i{
   height: 40px;
@@ -247,9 +283,6 @@
   .social-icons a {
     margin: 5px;
   }
-}
-
-@media (max-width: 576px) {
   .footer-section ul li {
     font-size: 13px;
   }
@@ -262,6 +295,7 @@
     font-size: 16px;
   }
 }
+
 
 
 
