@@ -14,6 +14,56 @@
 </head>
 <body>
   
+  <header class="header"> 
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#"><img src="../Assets/upcoming-conference-alert-logo.webp" alt=""></a>
+      </div>
+  
+      <!-- Navigation Menu -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#help">Help</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+  
+      <div class="search-and-btn">
+        <!-- Search Field -->
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <i class="fa fa-search search-icon"></i>
+        </div>
+  
+        <!-- Add Event Button -->
+        <div class="add-event-btn">
+          <a href="#add-event">Add Event</a>
+        </div>
+      </div>
+  
+      <!-- Mobile Menu Toggle -->
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+  </header>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const navMenu = document.querySelector('.nav-menu ul');
+      mobileMenu.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+    });
+  </script>
+  
+
+
 
   <!-- Hero Section -->
   <section class="hero">
@@ -341,6 +391,65 @@
     </div>
     
   </section>
+
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <!-- Logo and Short Description -->
+      <div class="footer-section logo-desc">
+        <img src="../Assets/upcoming-conference-alert-logo.webp" alt="Logo" class="footer-logo">
+        <p>Your one-stop platform for tracking global conferences and academic events.</p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-section quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#help">Upcoming Conferences</a></li>
+          <li><a href="#blog">Privacy Policy</a></li>
+        </ul>
+      </div>
+  
+      <!-- Popular Topics -->
+      <div class="footer-section popular-topics">
+        <h3>Popular Topics</h3>
+        <ul>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#business">Business</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#health">Health</a></li>
+          <li><a href="#science">Science</a></li>
+        </ul>
+      </div>
+  
+      <!-- Connect Us -->
+      <div class="footer-section connect-us">
+        <h3>Connect Us</h3>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+123456789">+123 456 789</a></li>
+          <li class="footer-social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+      <p>&copy; 2024 Upcoming Conference Alerts. All rights reserved.</p>
+    </div>
+  </footer>
+  
 
 </body>
 </html>
