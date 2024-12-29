@@ -123,60 +123,6 @@ body {
     cursor: pointer;
   }
   
-  /* Responsive Design */
-  
-  
-  @media (max-width: 768px) {
-    .nav-menu{
-      position: absolute;
-      z-index: 5;
-      width: 100%;
-      top: 100px;
-      left: 0;
-    }
-    .nav-menu ul {
-      display: none;
-      flex-direction: column;
-      background-color: #041a57;
-      position: absolute;
-      top: 100%; 
-      left: 0;
-      width: 100%; 
-     
-    }
-  
-    .nav-menu ul.active {
-      display: flex !important;
-      align-items: center;
-    }
-  
-    .menu-toggle {
-      display: block;
-  
-      right: 20px;
-      top: 20px;
-    }
-  
-    .search-container input {
-      width: 100px;
-    }
-    .nav-menu ul {
-      position: static;
-    }
-  
-    .nav-menu ul li {
-      padding: 10px 0;
-    }
-  
-    .search-container {
-      display: none;
-    }
-  
-    .add-event-btn {
-      display: none;
-    }
-  }
-  
   
   /* footer css  */
   
@@ -312,7 +258,7 @@ body {
     color: white;
     overflow: hidden;
   }
-  .hero h1{
+h1{
     font-size: 45px;
   }
   .hero p{
@@ -453,6 +399,88 @@ width: 100%;
 
   /* Responsive Design */
   @media (max-width: 768px) {
+
+    /* header  */
+    .nav-menu{
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+        top: 100px;
+        left: 0;
+      }
+      .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #041a57;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%; 
+       
+      }
+    
+      .nav-menu ul.active {
+        display: flex !important;
+        align-items: center;
+      }
+    
+      .menu-toggle {
+        display: block;
+    
+        right: 20px;
+        top: 20px;
+      }
+    
+      .search-container input {
+        width: 100px;
+      }
+      .nav-menu ul {
+        position: static;
+      }
+    
+      .nav-menu ul li {
+        padding: 10px 0;
+      }
+    
+      .search-container {
+        display: none;
+      }
+    
+      .add-event-btn {
+        display: none;
+      }
+
+       /* hero section  */
+       h1{
+        font-size: 35px; 
+      }
+  .hero{
+    padding: 50px 0;
+  }
+  .hero-buttons {
+    flex-direction: column;
+}
+
+/* form  */
+
+.form-container{
+    margin: 40px 10px;
+    padding: 40px 20px;
+}
+.form-container h3{
+    text-align: center;
+}
+.form-grid {
+    grid-template-columns: 1fr;
+}
+.short-description-div {
+    grid-column: span 1;
+}
+
+
+
+/* footer  */
+
     .footer{
         padding: 30px 0 0;
     }
