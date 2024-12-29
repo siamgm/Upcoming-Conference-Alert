@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Form</title>
+    <link rel="stylesheet" href="../header-footer.css">
+    <link rel="stylesheet" href="../common-styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header class="header"> 
+        <div class="container">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="#"><img src="../Assets/upcoming-conference-alert-logo.webp" alt=""></a>
+          </div>
+      
+          <!-- Navigation Menu -->
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#help">Help</a></li>
+              <li><a href="#blog">Blog</a></li>
+            </ul>
+          </nav>
+      
+          <div class="search-and-btn">
+            <!-- Search Field -->
+            <div class="search-container">
+              <input type="text" placeholder="Search..." />
+              <i class="fa fa-search search-icon"></i>
+            </div>
+      
+            <!-- Add Event Button -->
+            <div class="add-event-btn">
+              <a href="#add-event">Add Event</a>
+            </div>
+            <div class="login-icon">
+              <a href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+          <div class="menu-toggle" id="mobile-menu">
+            <i class="fa fa-bars"></i>
+          </div>
+          </div>
+    
+      
+          
+        </div>
+      </header>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const mobileMenu = document.getElementById('mobile-menu');
+          const navMenu = document.querySelector('.nav-menu ul');
+          mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+          });
+        }); 
+</script>
+
+<div class="form-container">
+    <h2>Add Event</h2>
+    <form action="#" method="POST">
+
+        <!-- Event Organizer Details -->
+        <div class="form-section">
+            <h3>Event Organizer Details</h3>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="organizer-name">Organizer Name </label>
+                    <input type="text" id="organizer-name" name="organizer-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="organization-name">Name of Organization </label>
+                    <input type="text" id="organization-name" name="organization-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="organizer-email">Organizer Email </label>
+                    <input type="email" id="organizer-email" name="organizer-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password </label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password </label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Details -->
+        <div class="form-section">
+            <h3>Event Details</h3>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="event-name">Event Name </label>
+                    <input type="text" id="event-name" name="event-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-type">Event Type </label>
+                    <select id="event-type" name="event-type" required>
+                        <option value="">Select Type</option>
+                        <option value="">Select Type</option>
+                        <option value="conference">Conference</option>
+                        <option value="seminar">Seminar</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="webinar">Webinar</option>
+                        <option value="cpd-event">Continuing professional development event</option>
+                        <option value="online-conference">Online conference</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="event-category">Event Category </label>
+                    <select id="event-category" name="event-category" required>
+                        <option value="">Select Category</option>
+                        <option value="business-economics">Business and Economics</option>
+        <option value="mathematics-statistics">Mathematics and Statistics</option>
+        <option value="engineering-technology">Engineering and Technology</option>
+        <option value="physical-life-sciences">Physical and Life Sciences</option>
+        <option value="social-sciences-humanities">Social Sciences and Humanities</option>
+        <option value="education">Education</option>
+        <option value="interdisciplinary">Interdisciplinary</option>
+        <option value="law">Law</option>
+        <option value="agriculture">Agriculture</option>
+        <option value="sports-science">Sports Science</option>
+        <option value="medical-health-science">Medical and Health Science</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="event-topic">Event Topic </label>
+                    <select id="event-topic" name="event-topic" required>
+                        <option value="">Select Topic</option>
+                        <option value="ai">AI</option>
+                        <option value="ml">Machine Learning</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country </label>
+                    <select id="country" name="country" required>
+                        <option value="">Choose Country</option>
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="australia">Australia</option>
+        <option value="india">India</option>
+        <option value="germany">Germany</option>
+        <option value="france">France</option>
+        <option value="italy">Italy</option>
+        <option value="spain">Spain</option>
+        <option value="brazil">Brazil</option>
+        <option value="south-africa">South Africa</option>
+        <option value="mexico">Mexico</option>
+        <option value="japan">Japan</option>
+        <option value="china">China</option>
+        <option value="russia">Russia</option>
+        <option value="south-korea">South Korea</option>
+        <option value="netherlands">Netherlands</option>
+        <option value="sweden">Sweden</option>
+        <option value="singapore">Singapore</option>
+        <option value="new-zealand">New Zealand</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="state">State or Province </label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City </label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="venue">Venue </label>
+                    <input type="text" id="venue" name="venue" required>
+                </div>
+                <div class="form-group">
+                    <label for="organizing-society">Organizing Society </label>
+                    <input type="text" id="organizing-society" name="organizing-society" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-person">Contact Person for Event </label>
+                    <input type="text" id="contact-person" name="contact-person" required>
+                </div>
+                <div class="form-group">
+                    <label for="enquiries-email">Event Enquiries Email ID </label>
+                    <input type="email" id="enquiries-email" name="enquiries-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="website">Website Address </label>
+                    <input type="url" id="website" name="website" required>
+                </div>
+                <div class="form-group">
+                    <label for="start-date">Event Start Date </label>
+                    <input type="date" id="start-date" name="start-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="end-date">Last Day of Event </label>
+                    <input type="date" id="end-date" name="end-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="abstract-deadline">Deadline for Abstracts/Proposals </label>
+                    <input type="date" id="abstract-deadline" name="abstract-deadline" required>
+                </div>
+                <div class="form-group short-description-div">
+                    <label for="short-description">Short Description of Event </label>
+                    <textarea id="short-description" name="short-description" required></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-submit">
+            <button type="submit" class="red-btn">Submit Event</button>
+        </div>
+
+    </form>
+</div>
+
+<footer class="footer">
+    <div class="container">
+      <!-- Logo and Short Description -->
+      <div class="footer-section logo-desc">
+        <img src="../Assets/upcoming-conference-alert-logo.webp" alt="Logo" class="footer-logo">
+        <p>Discover, track, and join global conferences and academic events with our all-in-one platform, designed to keep you informed and connected.</p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-section quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#help">Upcoming Conferences</a></li>
+          <li><a href="#blog">FAQ</a></li>
+        </ul>
+      </div>
+  
+      <!-- Popular Topics -->
+      <div class="footer-section popular-topics">
+        <h3>Popular Topics</h3>
+        <ul>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#business">Business</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#health">Health</a></li>
+          <li><a href="#science">Science</a></li>
+        </ul>
+      </div>
+
+       <!-- Support -->
+       <div class="footer-section popular-topics">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#Privacy-Policy">Privacy Policy</a></li>
+          <li><a href="#Cookie-Policy">Cookie Policy</a></li>
+          <li><a href="#Terms-Of-Use">Terms Of Use</a></li>
+        </ul>
+      </div>
+  
+      <!-- Connect Us -->
+      <div class="footer-section connect-us">
+        <h3>Connect Us</h3>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+123456789">+123 456 789</a></li>
+          <li class="footer-social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+      <p>&copy; 2024 Upcoming Conference Alerts. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
