@@ -8,7 +8,8 @@ a{
 }
 
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Barlow', sans-serif;
     background-color: #f8f9fa;
 
 }
@@ -248,18 +249,19 @@ body {
   /* hero section  */
 
   .hero {
-    position: relative;
-    text-align: center;
-    padding: 100px 20px;
-    background-image: url('../Assets/hero-banner.webp') ;
-    background-size: cover ;
-    background-position: center center;
-    background-color: gray;
-    color: white;
-    overflow: hidden;
+    background: linear-gradient(90deg, rgba(31, 59, 55, 1) 0%, rgba(37, 83, 82, 1) 10%, rgba(31, 59, 55, 1) 21%, rgba(37, 83, 82, 1) 33%, rgba(31, 59, 55, 1) 44%, rgba(37, 83, 82, 1) 55%, rgba(31, 59, 55, 1) 67%, rgba(37, 83, 82, 1) 79%, rgba(31, 59, 55, 1) 90%, rgba(37, 83, 82, 1) 100%);
+    padding: 50px 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-h1{
-    font-size: 45px;
+.hero h1{
+    color: white;
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
   }
   .hero p{
     font-family: "Segoe UI", Tahoma, Geneva, sans-serif;
@@ -302,6 +304,34 @@ h1{
   .bordered-btn:hover{
     background-color: white;
     color: #f1345d;
+  }
+
+
+
+  /* info section  */
+  .info-section{
+    margin-top: 100px;
+  }
+  .info-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info-section h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    color: #000000;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 0.5px;
+  }
+  .info-section p{
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    color: #626262;
+    font-family: 'Barlow', sans-serif;
   }
   
 
