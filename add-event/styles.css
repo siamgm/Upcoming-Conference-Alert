@@ -274,38 +274,6 @@ body {
     align-items: center;
     
   }
-  
-  .hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 20px;
-  }
-
-  .white-btn{
-    background-color: white;
-    color:#f1345d;
-    padding: 15px 30px;
-    border-radius: 5px;
-    transition: all .3s ease;
-  }
-  .white-btn:hover{
-    background-color:#f1345d;
-    color:white;
-  }
-  .bordered-btn{
-    background-color: transparent;
-    color: white ;
-    border: 2px solid white !important;
-    padding: 15px 30px;
-    border-radius: 5px;
-    transition: all .3s ease; 
-  }
-  .bordered-btn:hover{
-    background-color: white;
-    color: #f1345d;
-  }
-
 
 
   /* info section  */
@@ -411,20 +379,6 @@ body {
     background-color:#041a57;
   }
 
-/* .form-submit button {
-    background-color: #007bff;
-color: white;
-border: none;
-padding: 15px 20px;
-font-size: 16px;
-border-radius: 5px;
-cursor: pointer;
-width: 100%;
-}
-
-.form-submit button:hover {
-    background-color: #0056b3;
-} */
 
 
   /* Responsive Design */
@@ -481,15 +435,12 @@ width: 100%;
       }
 
        /* hero section  */
-      .hero h1{
+.hero h1{
         font-size: 40px; 
       }
   .hero{
     padding: 50px 0;
   }
-  .hero-buttons {
-    flex-direction: column;
-}
 
 /* info-section  */
 
