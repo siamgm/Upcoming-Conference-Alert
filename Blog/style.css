@@ -68,7 +68,10 @@
 
   /* responsive  */
   @media (max-width: 768px) {
+    .blogs{
+      padding: 30px 10px;
+  }
   .blog-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
