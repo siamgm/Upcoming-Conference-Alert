@@ -52,7 +52,7 @@ body{
     list-style: inside;
   }
 
-  .pagination{
+ .single-blog .pagination{
     justify-content: space-between;
   }
 
@@ -63,12 +63,12 @@ body{
     flex: 1;
   }
 
-  .sidebar .search{
+  .single-blog .sidebar .search{
     display: flex;
     
   }
 
-  .sidebar>div{
+  .single-blog .sidebar>div{
     border-radius: 8px;
     padding: 1.5rem;
     background-color: #fff;
@@ -76,7 +76,7 @@ body{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .sidebar>div ul{
+  .single-blog .sidebar>div ul{
     max-height: 300px;
     overflow-y: auto;
   }
