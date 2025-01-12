@@ -13,7 +13,6 @@
     padding: 0 0 35px;
     overflow: hidden;
     border-radius: 10px;
-    border-bottom: 4px solid #ee0034;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease
   }
