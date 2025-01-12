@@ -64,47 +64,11 @@
 
   /* paginaion */
 
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 50px 0 0;
-  }
-  
-  .pagination-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .pagination-link i {
-    font-size: 1.2rem;
-  }
-  
-  .pagination-link:hover {
-    background-color: #ee0034;
-    color: #fff;
-    border-color: #ee0034;
-  }
-  
-  .pagination-link.active {
-    background-color: #ee0034;
-    color: #fff;
-    border-color: #ee0034;
-    font-weight: bold;
-  }
+
 
   /* responsive  */
-
+  @media (max-width: 768px) {
   .blog-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
